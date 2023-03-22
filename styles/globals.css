@@ -1,3 +1,25 @@
+@config "../tailwind.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+
+body{
+  @apply font-inter;
+}
+
+.header-founder{
+  background: linear-gradient(90.56deg, #000000 49.95%, rgba(0, 0, 0, 0) 99.54%), url(../public/images/pexels-visual-tag-mx-2566581.jpg);
+  background-size: cover;
+}
+
+.header-community{
+  background: linear-gradient(90.56deg, #000000 49.95%, rgba(0, 0, 0, 0) 99.54%), url(../public/images/pexels-matheus-bertelli-2608517.jpg);
+  background-size: cover;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
