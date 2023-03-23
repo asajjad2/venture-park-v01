@@ -2,11 +2,13 @@ import React from 'react';
 import Navbar from '@/components/elements/Navbar';
 import Button from '@/components/elements/Button';
 import Image from 'next/image';
-import { Linkedin } from '../public/icons/linkedin.svg';
-import { Dribble } from '../public/icons/dribble.svg';
-import { Behance } from '../public/icons/behance.svg';
+import Linkedin from '../public/icons/linkedin.svg';
+import Dribble from '../public/icons/dribble.svg';
+import Behance from '../public/icons/behance.svg';
 
 export default function headerFounder() {
+
+
   return (
         <div className='header-founder min-h-[724px]'>
             <Navbar />
@@ -24,9 +26,9 @@ export default function headerFounder() {
                 <div className="flex flex-col gap-5 text-white">
                     <div className='text-text-lg font-semibold'>Our Startups</div>
                     <div className="icons flex gap-8">
-                        <img src={Linkedin} width={100} height={24} alt="linkedin"/>
-                        <img src={Dribble} width={100} height={24} alt="dribble"/>
-                        <img src={Behance} width={100} height={24} alt="behance"/>
+                        <Image src={Linkedin.src} width={100} height={24} />
+                        <Image src={Dribble.src} width={100} height={24} />
+                        <Image src={Behance.src} width={100} height={24} />
                     </div>
                 </div>
             </main>

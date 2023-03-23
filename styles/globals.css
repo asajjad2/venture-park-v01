@@ -12,12 +12,18 @@ body{
 
 .header-founder{
   background: linear-gradient(90.56deg, #000000 49.95%, rgba(0, 0, 0, 0) 99.54%), url(../public/images/pexels-visual-tag-mx-2566581.jpg);
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 220% 0%;
 }
 
 .header-community{
   background: linear-gradient(90.56deg, #000000 49.95%, rgba(0, 0, 0, 0) 99.54%), url(../public/images/pexels-matheus-bertelli-2608517.jpg);
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 130% 0%;
 }
 
 :root {

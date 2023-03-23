@@ -20,7 +20,6 @@ export default function headerCommunity() {
                         <Button color='text-black' bgColor='bg-white' px='px-8' py='py-3.5'>Join the Community of Hundreds</Button>
                     </div>
                 </div>
-           
             </main>
     </div>
 )}

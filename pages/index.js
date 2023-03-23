@@ -11,6 +11,15 @@ import ApplyCard from '@/components/elements/ApplyCard'
 import FAQs from '@/components/FAQs'
 import ApplicationForm from '@/components/ApplicationForm'
 import Footer from '@/components/Footer'
+import HeaderApplication from '@/components/HeaderApplication'
+
+import f1 from '../public/images/brooke-cagle--uHVRvDr7pg-unsplash.jpg'
+import f2 from '../public/images/pexels-fauxels-3184418.jpg'
+import f3 from '../public/images/pexels-yan-krukau-7693099.jpg'
+import f4 from '../public/images/pexels-andrea-piacquadio-3760609.jpg'
+import f5 from '../public/images/andrew-neel-ute2XAFQU2I-unsplash.jpg'
+import f6 from '../public/images/pexels-rodnae-productions-7413915.jpg';
+import f7 from '../public/images/pexels-andrea-piacquadio-3974770.jpg';
 
 export default function Home() {
   return (
@@ -40,10 +49,10 @@ export default function Home() {
 
         <h1 className='text-display-lg font-bold font-pd'>We’ve Got Your Back!</h1>
         <div className='flex flex-col gap-20'>
-          <FeatureCard title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={'https://source.unsplash.com/random/?Cryptocurrency/'} icon={'https://source.unsplash.com/random/?icon/'}/>
-          <FeatureCard reverse={true} title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={'https://source.unsplash.com/random/?Cryptocurrency/'} icon={'https://source.unsplash.com/random/?icon/'}/>
-          <FeatureCard title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={'https://source.unsplash.com/random/?Cryptocurrency/'} icon={'https://source.unsplash.com/random/?icon/'}/>
-          <FeatureCard reverse={true} title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={'https://source.unsplash.com/random/?Cryptocurrency/'} icon={'https://source.unsplash.com/random/?icon/'}/>
+          <FeatureCard title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={f1.src} icon={'https://source.unsplash.com/random/?icon/'}/>
+          <FeatureCard reverse={true} title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={f2.src} icon={'https://source.unsplash.com/random/?icon/'}/>
+          <FeatureCard title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={f3.src} icon={'https://source.unsplash.com/random/?icon/'}/>
+          <FeatureCard reverse={true} title={'Get the Required Skillset'} text={'Desktop research only gets you so far, especially if you’re on the way to building something extraordinary. Instead, let our community shoulder you in getting the skillset you need. '} img={f4.src} icon={'https://source.unsplash.com/random/?icon/'}/>
         </div>
 
       </div>
@@ -80,9 +89,9 @@ export default function Home() {
 
         <h1 className='text-display-lg font-bold font-pd'>How to Get Started</h1>
         <div className='flex flex-col gap-20'>
-          <FeatureCard title={'1. Apply as a Founder'} text={'Fill out the form and tell us about your next big thing.'} img={'https://source.unsplash.com/random/?Cryptocurrency/'}/>
-          <FeatureCard reverse={true} title={'2. Pitch us Your Idea'} text={'Next up, pitch us your idea in-front of the judges who would evaluate your idea to help us determine if we’re the perfect fit for you.'} img={'https://source.unsplash.com/random/?Cryptocurrency/'} />
-          <FeatureCard title={'3. Get Selected'} text={'Congratulations! You’re now a part of a much bigger community that builds and takes startups right to the doors of success'} img={'https://source.unsplash.com/random/?Cryptocurrency/'} />
+          <FeatureCard title={'1. Apply as a Founder'} text={'Fill out the form and tell us about your next big thing.'} img={f5.src}/>
+          <FeatureCard reverse={true} title={'2. Pitch us Your Idea'} text={'Next up, pitch us your idea in-front of the judges who would evaluate your idea to help us determine if we’re the perfect fit for you.'} img={f6.src} />
+          <FeatureCard title={'3. Get Selected'} text={'Congratulations! You’re now a part of a much bigger community that builds and takes startups right to the doors of success'} img={f7.src} />
         </div>
 
       </div>

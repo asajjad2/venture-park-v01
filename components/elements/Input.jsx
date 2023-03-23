@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function Input({ type, placeholder, value, onChange }) {
+export default function Input({ type, placeholder, value, onChange, label }) {
   return (
-    <div>
+    <div className='space-y-1'>
+        {label && <label className='text-text-sm font-medium text-gray-800'>{label}</label>}
         <input
             type={type}
             placeholder={placeholder}

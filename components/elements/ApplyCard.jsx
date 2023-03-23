@@ -4,7 +4,6 @@ import Button from './Button';
 
 export default function ApplyCard({title, subtitle, list, onClick}) {
 
-    console.log(Check);
 
   return (
     <div className='flex flex-col gap-16 justify-between p-6 rounded-[6px] bg-gray-50 border-[1px] border-gray-200 max-w-[25rem]'>
@@ -18,7 +17,7 @@ export default function ApplyCard({title, subtitle, list, onClick}) {
                 {
                     list && list.map((item, index) => {
                         return (
-                            <div className='flex gap-2 items-center'>
+                            <div className='flex gap-2 items-center' key={index}>
                                 <div className='w-6 h-6 bg-success-100 rounded-full flex justify-center items-center'>
                                     <Check className='text-success-600' size={16}/>
                                 </div>
