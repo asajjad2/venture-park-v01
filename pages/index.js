@@ -8,14 +8,13 @@ import Navbar from '@/components/elements/Navbar'
 import Point from '@/components/elements/Point'
 import FeatureCard from '@/components/elements/FeatureCard'
 import ApplyCard from '@/components/elements/ApplyCard'
-import FAQ from '@/components/elements/FAQ'
-import Input from '@/components/elements/Input'
-import TextArea from '@/components/elements/TextArea'
+import FAQs from '@/components/FAQs'
+import ApplicationForm from '@/components/ApplicationForm'
 import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <>
+    <div className='bg-white'> 
       <Header />
 
       <div className='w-screen flex flex-col items-center p-[6.5rem] gap-20'>
@@ -96,55 +95,11 @@ export default function Home() {
         <Button color='text-black' bgColor='bg-white' px='px-8' py='py-3.5'>Apply Now</Button>
       </div>
 
-      <div className='flex flex-col p-[6.5rem] gap-20 items-center'>
-        <h1 className='text-display-lg font-bold font-pd'>Frequently Asked Questions</h1>
-        <div className='grid grid-cols-2 gap-16'>
-          <FAQ question={'What is Venture Park?'}
-            answer={'Venture Park is an incubation center that helps entrepreneurs bring their ideas to life by providing resources, support, and connections. We offer a range of services, including idea generation, MVP development, and fundraising, to help entrepreneurs navigate the journey of entrepreneurship.'}
-          />
-
-          <FAQ question={'What services does Venture Park provide?'}
-            answer={'We provide a range of services to entrepreneurs, including idea generation and validation, MVP development, marketing and fundraising, mentorship and coaching, networking and community building, customized incubation programs, workshops and events, legal and financial support, access to funding, and post-incubation support.'}
-          />
-
-          <FAQ question={'Who is the target market for Venture Park?'}
-            answer={'We target entrepreneurs who are looking to turn their ideas into reality, regardless of their stage, whether they are just in the idea generation stage, working on their MVP, or seeking funding.'}
-          />
-
-          <FAQ question={'How does Venture Park help entrepreneurs?'}
-            answer={'We provide entrepreneurs with the resources, support, and connections they need to bring their ideas to life. This includes mentorship, networking opportunities, and access to funding. We also provide services such as idea generation and validation, MVP development, marketing and fundraising, and more.'}
-          />
-        </div>
-      </div>
-
-
-      <div className='p-[6.5rem] grid grid-cols-2 gap-[240px]'>
-        <div className='space-y-16'>
-          <div className='space-y-6'>
-            <h1 className='text-display-lg font-bold font-pd'>Reach Out to Us</h1>
-            <p className='text-text-md font-normal'>We’re always open to any suggestions or ideas that you may have. Feel free to send us a message or check out our socials!</p>
-          </div>
-          
-        </div>
-        <div className='space-y-6'>
-          <h3 className='text-text-xl2 font-bold'>Send us a Message</h3>
-          <form action="" className='space-y-4'>
-            <Input type={'text'} placeholder={'Enter your name'}/>
-            <Input type={'email'} placeholder={'Enter your email'}/>
-            <TextArea placeholder={'Your Message'}/>
-            <Button 
-              color='text-white'
-              bgColor='bg-gray-900'
-              px='px-8'
-              py='py-3.5'
-              size='full'>Send</Button>
-          </form>
-        </div>
-      </div>
-
+      <FAQs />  
+      <ApplicationForm />
       <Footer />
 
 
-    </>
+    </div>
   )
 }
